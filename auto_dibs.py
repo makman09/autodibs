@@ -99,6 +99,6 @@ def auto_dibs(barcode, email, number):
 	driver.find_element_by_css_selector("button#btnCallDibs").click()
 
 for barcode in barcodes():
-	auto_dibs(barcode, '', '')
+	auto_dibs(barcode["barcode"], barcode["email"], barcode["number"])
 
 driver.quit()
