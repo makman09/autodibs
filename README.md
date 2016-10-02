@@ -30,7 +30,6 @@ be sure to populate the barcode.json file with student barcodes found
 on the back of student ids
 
 '''python
-	
 	autodibs('<barcode>', '<email>', '<number>')
 '''
 
