@@ -7,9 +7,8 @@ It uses Selenium on PhantomJS in python to reserve room for you.
 
 In order to use this you need to install some dependencies
 
-'''bash
-	pip install selenium
-
+'''
+    pip install selenium
 '''
 
 You can choose to either use phanthomjs as the headless browser or something
