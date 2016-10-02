@@ -9,7 +9,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from helpers import time_table, barcodes
 
 # variable initialization
-driver = webdriver.Chrome('chromedriver')
+# driver = webdriver.Chrome('chromedriver')
+driver = webdriver.PhantomJS()
 
 '''
 	@params barcode {string} - used to authenticate you into the system
@@ -98,6 +99,6 @@ def auto_dibs(barcode, email, number):
 	driver.find_element_by_css_selector("button#btnCallDibs").click()
 
 for barcode in barcodes():
-	auto_dibs(barcode, 'mak013@ucsd.edu', '9092174435')
+	auto_dibs(barcode, '', '')
 
 driver.quit()
