@@ -26,6 +26,14 @@ Be sure to install Chrome before you install the chrome driver
 
 Once you have those running, you can start automating reservations`
 
+be sure to populate the barcode.json file with student barcodes found 
+on the back of student ids
+
+'''python
+	
+	autodibs('<barcode>', '<email>', '<number>')
+'''
+
 ## Limitation of UCSD DIBS ##
 
 You can only have upto 3 active reservation overall. You can reserve again 
